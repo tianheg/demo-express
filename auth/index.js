@@ -126,7 +126,7 @@ app.post('/login', function(req, res, next) {
   })
 })
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 8080
 
 if (!module.parent) {
   app.listen(PORT, () => console.log(`Server is running at port ${PORT}`))
