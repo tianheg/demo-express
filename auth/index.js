@@ -58,7 +58,7 @@ hash({ password: 'foobar' }, function (err, pass, salt, hash) {
 // Authenticate using plain-object database
 
 function authenticate(name, pass, fn) {
-  // 这个 fn 是什么
+  // 这个 fn 是什么，可能是回调函数
   // https://nodejs.org/dist/latest-v16.x/docs/api/modules.html#accessing-the-main-module
   if (!module.parent) console.log('authenticating %s:%s', name, pass)
   const user = users[name]
