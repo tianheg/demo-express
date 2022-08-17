@@ -18,7 +18,7 @@ app.use(count)
 // custom middleware
 function count(req, res) {
   req.session.count = (req.session.count || 0) + 1
-  res.send('viewed ' + req.session.count + ' times\n')
+  res.send(`viewed ${req.session.count} times\n`)
 }
 
 const PORT = process.env.PORT || 8080
