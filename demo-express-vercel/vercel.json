@@ -1,7 +1,7 @@
 {
   "functions": {
-    "./index.js": {
-      "runtime": "@vercel/node"
+    "api/index.js": {
+      "runtime": "@vercel/node@2.5.8"
     }
   },
   "redirects": [
